@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sr. UI/UX Designer - US</title>
+	</head>
+	<style>
+		body 
+			{
+				background-color: #ADD8E6;}
+		textarea  
+			{  
+			   font-family:"Calibri";  
+			   font-size: 13pt;   
+			}
+	</style>
+<body style=font-family:"Calibri";>
+<center>
+<h1>LinkedIn Add Note</h1>
+<h2>Enter the name below</h2>
+
+<p>Click the button and enter the name.</p>
+
+<button onclick="myFunction()"; style=font-family:"Calibri">Enter</button><br><br>
+<textarea id="demo" rows="9" cols="80"></textarea><br><br>
+<button onclick="copyT()"; style=font-family:"Calibri">Copy text</button><br><br>
+
+<script>
+function myFunction() {
+  let person = prompt("Please enter name", "Harry Potter");
+  if (person != null) {
+  
+    document.getElementById("demo").innerHTML =
+    "Hi " + person + ",\nI am Jabar from VDart and I am Hiring for a Sr. UI/UX Designer in Dallas, TX(Remote). Please let me know if you are interested and kindly respond with your resume to jabar.k@vdartinc.com.\n\nKind & Regards\nJabar\n+1 470 682 3892\njabar.k@vdartinc.com";
+ } 
+}
+
+function copyT() {
+    
+    var Text = document.getElementById("demo");
+    Text.select();
+    navigator.clipboard.writeText(Text.value);
+    
+	}
+
+
+</script>
+</body>
+<footer>&copy; Copyright 2022|Jaf</footer>
+</center>
+</html>
